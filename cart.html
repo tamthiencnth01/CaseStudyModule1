@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TÂM THIỆN COMPUTER</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/share?selection.family=Roboto:wght@100;400"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal.css">
+  </head>
+  <body>
+    <div class="full">
+        <header>
+            <nav>
+              <div class="img-nav">
+                <img  width="100px" height="70px"
+                 src="images/logo.png" alt="" />
+              </div>
+              <div class="content-nav">
+                <a href="index.html"><img width="100px" height="70px"
+                src="images/logo.png" alt="" /></a>
+                <ul>
+                  <li><a href="#">Trang Chủ</a></li>
+                  <li><a href="#">Sản Phẩm</a></li>
+                  <li><a href="#">Liên Hệ</a></li>
+                  <li><a href="#">Giới Thiệu</a></li>
+                </ul>
+                <form>
+                  <input
+                    type="text"
+                    name="search"
+                    placeholder="Tìm kiếm sản phẩm..."
+                  />
+                  <button type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </div>
+              <!-- The Modal -->
+              <button id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Giỏ Hàng
+              </button>
+              <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Giỏ Hàng</h5>
+                    <span class="close">&times;</span>
+                  </div>
+                  
+                  <div class="modal-body">
+                                       <div class="cart-row">
+                                           <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                           <span class="cart-price cart-header cart-column">Giá</span>
+                                           <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                                       </div>
+                                       <div class="cart-items">
+                                           <div class="cart-row">
+                                           <div class="cart-item cart-column">
+                                               <img class="cart-item-image" src="images/case/case1.jpg" width="100" height="100">
+                                               <span class="cart-item-title">Máy Tính Poiseidon</span>
+                                           </div>
+                                           <span class="cart-price cart-column">250000đ</span>
+                                           <div class="cart-quantity cart-column">
+                                               <input class="cart-quantity-input" type="number" value="1">
+                                               <button class="btn btn-danger" type="button">Xóa</button>
+                                           </div>
+                                       </div>
+                                       <div class="cart-row">
+                                           <div class="cart-item cart-column">
+                                               <img class="cart-item-image" src="images/case/case3.jpg" width="100" height="100">
+                                               <span class="cart-item-title">Máy In canon 2900</span>
+                                           </div>
+                                           <span class="cart-price cart-column">1599000đ</span>
+                                           <div class="cart-quantity cart-column">
+                                               <input class="cart-quantity-input" type="number" value="2">
+                                               <button class="btn btn-danger" type="button">Xóa</button>
+                                           </div>
+                                       </div>
+                                       <div class="cart-total">
+                                           <strong class="cart-total-title">Tổng Cộng:</strong>
+                                           <span class="cart-total-price">3223000VNĐ</span>
+                                       </div>
+                                   </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-footer">
+                      Đóng
+                    </button>
+                    <button type="button" class="btn btn-primary order">
+                      Thanh Toán
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </header>
+      <div class="banner">
+        <div class="mySlides fade">
+          <a href="slide1.html">
+          <div
+            class="header-slider-img"
+            style="background-image: url(images/banner2.jpg)"
+          ></div></a>
+        </div>
+
+        <div class="mySlides fade">
+          <a href="slide2.html">
+          <div
+            class="header-slider-img"
+            style="background-image: url(images/banner1.jpg)"
+          ></div></a>
+        </div>
+
+        <div class="mySlides fade">
+          <a href="slide3.html"
+            ><div
+              class="header-slider-img"
+              style="background-image: url(images/banner3.jpg)"
+            ></div
+          ></a>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <div class="context">
+        <div class="box-title-container">
+          <p class="ribbon">CASE GAMING</p>
+
+          <div class="child-title">
+            <a class="child-title-mini" href="">||| NTXZ </a>
+
+            <a class="child-title-mini" href="">||| COOLER MASTER </a>
+
+            <a class="child-title-mini" href="">||| DELL</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img
+              src="images/case/case1.jpg"
+              alt="Case1"
+              style="width: 100%"
+            /><span class="tooltiptext"
+              ><img class="popup" src="images/case/case1-info.jpg" alt=""
+            /></span>
+            <div class="content-product">
+                <h3 class="content-product-h3">Máy Tính Poiseidon</h3>
+                <div class="content-product-deltals">
+                  <div class="price">
+                    <span class="money">25000000đ</span>
+                  </div>
+                  <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                </div>
+              </div>
+          </div>
+          <div class="column">
+            <img
+              src="images/case/case2.jpg"
+              alt="Case2"
+              style="width: 100%"
+            /><span class="tooltiptext"
+              ><img class="popup" src="images/case/case2-info.jpg" alt=""
+            /></span>
+            <div class="content-product">
+                <h3 class="content-product-h3">Máy Tính Hunter</h3>
+                <div class="content-product-deltals">
+                  <div class="price">
+                    <span class="money">25000000đ</span>
+                  </div>
+                  <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                </div>
+              </div>
+          </div>
+          <div class="column">
+            <img
+              src="images/case/case3.jpg"
+              alt="Case3"
+              style="width: 100%"
+            /><span class="tooltiptext"
+              ><img class="popup" src="images/case/case3-info.jpg" alt=""
+            /></span>
+            <div class="content-product">
+                <h3 class="content-product-h3">Máy Tính Devil</h3>
+                <div class="content-product-deltals">
+                  <div class="price">
+                    <span class="money">250000đ</span>
+                  </div>
+                  <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                </div>
+              </div>
+          </div>
+          <div class="column">
+            <img
+              src="images/case/case4.jpg"
+              alt="Case3"
+              style="width: 100%"
+            /><span class="tooltiptext"
+              ><img class="popup" src="images/case/case4-info.jpg" alt=""
+            /></span>
+            <div class="content-product">
+                <h3 class="content-product-h3">Máy Tính Binz</h3>
+                <div class="content-product-deltals">
+                  <div class="price">
+                    <span class="money">2500000đ</span>
+                  </div>
+                  <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                </div>
+              </div>
+          </div>
+          <div class="columnleft">
+            <img
+              src="images/case/case5.jpg"
+              alt="Case3"
+              style="width: 100%"
+            /><span class="tooltiptextleft"
+              ><img class="popup" src="images/case/case5-info.jpg" alt=""
+            /></span>
+            <div class="content-product">
+                <h3 class="content-product-h3">Máy Tính Red Alert 3</h3>
+                <div class="content-product-deltals">
+                  <div class="price">
+                    <span class="money">2500000đ</span>
+                  </div>
+                  <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="context"> -->
+        <div class="box-title-container">
+          <p class="ribbon">LAPTOP GAMING</p>
+
+          <div class="child-title">
+            <a class="child-title-mini" href="">||| HP </a>
+
+            <a class="child-title-mini" href="">||| ASUS </a>
+
+            <a class="child-title-mini" href="">||| DELL </a>
+            <a class="child-title-mini" href="">||| ACER </a>
+
+            <a class="child-title-mini" href="">||| ALIENWARE </a>
+
+            <a class="child-title-mini" href="">||| MACBOOK</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img
+              src="images/laptop/laptop1.jpg"
+              alt="Laptop1"
+              style="width: 100%"
+            /><span class="tooltiptext"
+              ><img class="popup" src="images/laptop/laptop1-info.jpg" alt=""
+            /></span>
+          </div>
+          <div class="column">
+            <img
+              src="images/laptop/laptop2.jpg"
+              alt="Laptop2"
+              style="width: 100%"
+            /><span class="tooltiptext"
+              ><img class="popup" src="images/laptop/laptop2-info.jpg" alt=""
+            /></span>
+          </div>
+          <div class="column">
+            <img
+              src="images/laptop/laptop3.jpg"
+              alt="laptop3"
+              style="width: 100%"
+            /><span class="tooltiptext"
+              ><img class="popup" src="images/laptop/laptop3-info.jpg" alt=""
+            /></span>
+          </div>
+          <div class="column">
+            <img
+              src="images/laptop/laptop4.jpg"
+              alt="Laptop4"
+              style="width: 100%"
+            /><span class="tooltiptext"
+              ><img class="popup" src="images/laptop/laptop4-info.jpg" alt=""
+            /></span>
+          </div>
+          <div class="column">
+            <img
+              src="images/laptop/laptop5.jpg"
+              alt="Laptop5"
+              style="width: 100%"
+            /><span class="tooltiptext"
+              ><img class="popup" src="images/laptop/laptop5-info.jpg" alt=""
+            /></span>
+          </div>
+        </div>
+        <div class="box-title-container">
+          <p class="ribbon">PLAY STATION</p>
+
+          <div class="child-title">
+            <a class="child-title-mini" href="">||| PlayStation5 </a>
+
+            <a class="child-title-mini" href="">||| PlayStation4 </a>
+
+            <a class="child-title-mini" href="">||| XBOX</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img
+              src="images/ps/ps5.jpg"
+              alt="PlayStation5"
+              style="width: 100%"
+            /><span class="tooltiptext"
+              ><img class="popup" src="images/ps/ps5-info.jpg" alt=""
+            /></span>
+          </div>
+          <div class="column">
+            <img
+              src="images/ps/ps4.jpg"
+              alt="PlayStation4"
+              style="width: 100%"
+            /><span class="tooltiptext"><img class="popup" src="images/ps/ps4-info.jpg" alt=""
+              /></span>
+          </div>
+          <div class="column">
+            <img src="images/ps/xbox.jpg" alt="XBOX" style="width: 100%" /><span
+              class="tooltiptext"
+              ><img class="popup" src="images/ps/xbox-info.jpg" alt=""
+              /></span
+            >
+          </div>
+        </div>
+        <div class="box-title-container">
+          <p class="ribbon">VGA GAMING</p>
+
+          <div class="child-title">
+            <a href="/Laptop-msi_dm1065.html">INWIN WINBOT</a>
+
+            <a href="/laptop-acer_dm1060.html"
+              >INWIN Signature Motorized Transforme</a
+            >
+
+            <a href="/laptop-asus_dm1058.html"
+              >INWIN Tòu 2.0 Full Tempered Glass Limited Edition</a
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img
+              src="images/card/card1.png"
+              alt="Laptop1"
+              style="width: 100%"
+            /><span class="tooltiptext"
+              ><img class="popup" src="images/laptop/laptop1-info.jpg" alt=""
+            /></span>
+          </div>
+          <div class="column">
+            <img
+              src="images/card/card2.png"
+              alt="Forest"
+              style="width: 100%"
+            /><span class="tooltiptext"
+              ><img class="popup" src="images/card/card1-info.png" alt=""
+            /></span>
+          </div>
+          <div class="column">
+            <img
+              src="images/card/card3.png"
+              alt="laptop3"
+              style="width: 100%"
+            /><span class="tooltiptext"
+              ><img class="popup" src="images/card/card1-info.png" alt=""
+            /></span>
+          </div>
+          <div class="column">
+            <img
+              src="images/card/card4.png"
+              alt="laptop3"
+              style="width: 100%"
+            /><span class="tooltiptext"
+              ><img class="popup" src="images/card/card1-info.png" alt=""
+            /></span>
+          </div>
+          <div class="column">
+            <img
+              src="images/card/card5.png"
+              alt="laptop3"
+              style="width: 100%"
+            /><span class="tooltiptext"
+              ><img class="popup" src="images/card/card1-info.png" alt=""
+            /></span>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footerBetween">   
+            <div>
+                <h4>PRINTER</h4>
+                <ul>
+                    <li><a href="#"></a>CANON 2900</a></li>
+                    <li><a href="#"></a>CANON 251dw</a></li>
+                    <li><a href="#"></a>BROTHER 2321D</a></li>
+                    <li><a href="#"></a>BROTHER 7360</a></li>
+                   <li><a href="#"></a>HP 1210</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>MONITOR</h4>
+                <ul>
+                    <li><a href="#"></a>LG</a></li>
+                    <li><a href="#"></a>SAMSUNG</a></li>
+                    <li><a href="#"></a>DELL</a></li>
+                    <li><a href="#"></a>ASUS</a></li>
+                    <li><a href="#"></a>ACER</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>MAINBOARD</h4>
+                <ul>
+                    <li><a href="#"></a>GIGABYTE H410</a></li>
+                    <li><a href="#"></a>GIGABYTE B460</a></li>
+                    <li><a href="#"></a>MSI H410</a></li>
+                    <li><a href="#"></a>MSI B460</a></li>
+                    <li><a href="#"></a>MAIN X79</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>CPU</h4>
+                <ul>
+                    <li><a href="#"></a>Intel Core I9-10100</a></li>
+                    <li><a href="#"></a>Intel Core I9-10200</a></li>
+                    <li><a href="#"></a>Intel Core I9-10300</a></li>
+                    <li><a href="#"></a>Intel Core I9-10400</a></li>
+                    <li><a href="#"></a>Intel Core I9-10500</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="end">
+    <div class="endLeft">   
+        <div>
+            <ul>
+                <li><a href="#"></a><strong>LIÊN HỆ VỚI CHÚNG TÔI</strong></a></li>
+                <li><a href="#"></a><strong>GIỚI THIỆU VỀ TÂM THIỆN COMPUTER</strong></a></li>
+                <li><a href="#"></a><strong>KHÁCH HÀNG DOANH NGHIỆP</strong></a></li>
+                <li><a href="#"></a><strong>XÂY DỰNG CẤU HÌNH PC V1</strong></a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#"></a><strong>HỖ TRỢ KHÁCH HÀNG</strong> </a></li>
+                <div class="endLeft1">
+                    <li><a href="#"></a>Hướng dẫn mua hàng trực tuyến</a></li>
+                    <li><a href="#"></a>Hướng dẫn thanh toán</a></li>
+                    <li><a href="#"></a>Hướng dẫn mua hàng trả góp</a></li>
+                    <li><a href="#"></a>In hóa đơn điện tử</a></li>
+                    <li><a href="#"></a>Hướng dẫn đổi trả</a></li>
+                </div>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#"></a><strong>CHÍNH SÁCH CHUNG</strong></a></li>
+                <li><a href="#"></a>Chính sách vận chuyển</a></li>
+                <li><a href="#"></a>Chính sách bảo hành</a></li>
+                <li><a href="#"></a>Chính sách đổi trả và hoàn tiền</a></li>
+                <li><a href="#"></a>Chính sách hàng chính hãng</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="socialnetwork">
+        <ul>
+            <li>
+                <i class="fab fa-twitter"></i>
+            </li>
+            <li>
+                <i class="fab fa-facebook-f"></i>
+            </li>
+            <li>
+                <i class="fab fa-youtube-square"></i>
+            </li>
+            <li>
+                <i class="fab fa-instagram"></i>
+            </li>
+        </ul>
+    </div>
+    <div class="line"></div>
+    <div class="end1">
+        <div class="theEnd">
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i></li>
+                <li>Việt Nam</li>
+                <li>© 2021 Tâm Thiện Computer, Inc. All Rights Reserved</li>
+            </ul>
+        </div>
+        <div class="theEnd1">
+            <ul>
+                <li>Guides</li>
+                <li>Terms of Sale</li>
+                <li>Termes of Use</li>
+                <li>Tâm Thiện Privacy Policy</li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/slide.js">
+    </script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

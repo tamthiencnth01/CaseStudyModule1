@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.add-product {
+  width: 50%;
+  background-color: grey;
+  padding: 20px 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+li {
+  color: black;
+  list-style-type: none;
+}

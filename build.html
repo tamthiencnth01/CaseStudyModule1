@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THANH TOÁN HÓA ĐƠN</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/share?selection.family=Roboto:wght@100;400"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/build.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body onload="renderListCart()">
+    <div class="full">
+      <div class="header">
+        <div class="container">
+          <div class="business">
+            <div class="menu-tr">
+              <div class="menu" id="grab2">
+                <a href=""
+                  ><marquee behavior="content" direction="left">
+                    TRUNG TÂM GẦN NHẤT : 28 NGUYỄN TRI PHƯƠNG
+                  </marquee>
+                </a>
+              </div>
+              <div class="menu"><a href="">BẢO HÀNH</a></div>
+              <div class="menu"><a href="">HÓA ĐƠN ĐIỆN TỬ</a></div>
+              <div class="menu"><a href="">BÁN LẺ</a></div>
+              <div class="menu"><a href="">TUYỂN DỤNG</a></div>
+            </div>
+          </div>
+          <div class="logo">
+            <div class="logo-company">
+              <a href="index.html"
+                ><img
+                  src="images/logo.png"
+                  alt="logo cong ty"
+                  width="130px"
+                  height="100px"
+              /></a>
+              <div class="clearfix">
+                <select name="scat_id" class="search_id">
+                  <option value="">Tất cả danh mục</option>
+
+                  <option value="395">Máy tính xách tay - Laptop</option>
+
+                  <option value="394">Máy tính - Máy chủ</option>
+
+                  <option value="400">Máy in - TB văn phòng</option>
+
+                  <option value="1253">Linh kiện máy tính</option>
+
+                  <option value="1052">Màn hình Máy Tính</option>
+
+                  <option value="1255">Gaming Gear</option>
+
+                  <option value="393">TB lưu trữ, nghe nhìn</option>
+
+                  <option value="399">Thiết bị mạng</option>
+
+                  <option value="1214">Camera</option>
+
+                  <option value="397">Cooling, Tản nhiệt</option>
+
+                  <option value="1934">Điện Thoại Di Động</option>
+
+                  <option value="2101">ConceptD Đồ họa chuyên nghiệp</option>
+
+                  <option value="2112">Phụ kiện Laptop, PC, khác</option>
+
+                  <option value="2187">Nhà Thông Minh - Smart Home</option>
+                </select>
+              </div>
+              <div class="searh-form-container">
+                <input
+                  type="text"
+                  id="js-search"
+                  class="text_search"
+                  name="q"
+                  placeholder="Tìm kiếm sản phẩm..."
+                />
+                <button type="submit" class="submit-search">
+                  <i class="fa fa-search"></i> Tìm kiếm
+                </button>
+              </div>
+              <div class="build-case">
+                <a class="submit-search" href="build.html">
+                  <i class="far fa-calendar-plus"></i> THANH TOÁN ĐƠN HÀNG
+                </a>
+              </div>
+              <img
+                src="images/add-to-cart.png"
+                alt="Thanh Toán"
+                style="width: 50px; height: 50px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="context">
+        <div class="form-cart">
+          <input type="hidden" id="index" />
+          <h3>Thông Tin Đơn Hàng</h3>
+          <label>Tên Sản Phẩm</label>
+          <input type="text" id="product-name" />
+          <span id="productname-error" class="error"></span>
+          <br />
+
+          <label>Tên Khách Hàng</label>
+          <input type="text" id="customer-name" />
+          <span id="custonmername-error" class="error"></span>
+          <br />
+
+          <label>Đơn Giá</label>
+          <input type="number" id="unit-price" />
+          <span id="unitprice-error" class="error"></span>
+          <br />
+
+          <label>Địa Chỉ Khách Hàng</label>
+          <input type="text" id="address" />
+          <span id="address-error" class="error"></span>
+          <br />
+
+          <label>&nbsp;</label>
+          <button id="add" onclick="add()">Thêm</button>
+          <button id="update" onclick="changeCart()" style="display: none">
+            Cập Nhật Đơn Hàng
+          </button>
+
+          <label>&nbsp;</label>
+          <button onclick="window.print()">In Hóa Đơn</button>
+        </div>
+        <div class="list-cart" id="list-cart">
+          <h3>Danh Sách Đơn Hàng</h3>
+          <table
+            id="view-cart"
+            width="600"
+            border="1"
+            cellpadding="0"
+            cellpadding="0"
+          ></table>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)"></script>
+    <script src="js/build.js"></script>
+  </body>
+</html>

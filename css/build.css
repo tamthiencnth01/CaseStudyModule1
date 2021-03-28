@@ -1,0 +1,65 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+div.form-cart,
+div.list-cart {
+  width: 500px;
+  border: 1px solid #ccc;
+  margin: 25px;
+  padding: 10px;
+  float: left;
+}
+div.list-cart {
+  width: 620px;
+  color: black;
+}
+div.form-cart h3 {
+  padding: 0px;
+  margin-top: 0px;
+  color: black;
+}
+div.form-cart label {
+  width: 150px;
+  float: left;
+}
+div.form-cart input[type="text"],
+input[type="number"],
+button {
+  margin-bottom: 10px;
+  width: 200px;
+  padding: 5px;
+}
+.error {
+  color: red;
+}
+table {
+  margin: 0px auto;
+}
+
+table,
+th,
+tr,
+td {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+table > thead {
+  background-color: gray;
+  color: white;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: bisque;
+}
+
+tbody > tr:hover {
+  background-color: darkgray;
+  cursor: pointer;
+}
